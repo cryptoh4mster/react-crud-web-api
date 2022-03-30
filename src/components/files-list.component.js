@@ -116,6 +116,12 @@ deleteFile() {
                 </label>{" "}
                 {currentFile.fileName.split('.')[currentFile.fileName.split('.').length-1]}   
               </div>
+              <div>
+                <label>
+                  <strong>Size:</strong>
+                </label>{" "}
+                {currentFile.file.length}   
+              </div>
 
               <button
                 className="badge badge-success"
