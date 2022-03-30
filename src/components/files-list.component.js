@@ -120,14 +120,14 @@ deleteFile() {
                 <label>
                   <strong>Size:</strong>
                 </label>{" "}
-                {currentFile.file.length}   
+                {currentFile.file.length} bytes
               </div>
 
               <button
                 className="badge badge-success"
                 onClick={this.downloadActiveFile}
               >
-                Download
+                Download 
               </button>
 
               <button
