@@ -68,11 +68,12 @@ deleteFile() {
   FileService.delete(this.state.currentFile.id)
     .then(response => {
       console.log(response.data);
+      window.location.reload();
     })
+    //.then()
     .catch(e => {
       console.log(e);
     });
-    window.location.reload();
 }
 
   render() {

@@ -49,13 +49,16 @@ export default class AddFile extends Component {
           name: response.data.name,
           file: response.data.file,
           submitted: true
-        });
+        })
         console.log(response.data);
+        window.location.href="/files";
       })
+      //.then(window.location.href="/files")
+      
       .catch(e => {
         console.log(e);
-      });
-      window.location.href="/files";
+      })
+      
   }
 
   newFile() {
